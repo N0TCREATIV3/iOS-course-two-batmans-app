@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="two_bombs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="9hb-XO-NfB">
+                                <rect key="frame" x="242" y="28" width="105" height="56"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images-2" translatesAutoresizingMaskIntoConstraints="NO" id="ULl-PS-vd7">
+                                <rect key="frame" x="20" y="20" width="105" height="70"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMB-Rp-dpa">
+                                <rect key="frame" x="108" y="341" width="159" height="30"/>
+                                <state key="normal" title="Hide Blue logo"/>
+                                <connections>
+                                    <action selector="HideBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RB1-2S-wSq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bZ-Qg-PW9">
+                                <rect key="frame" x="108" y="379" width="159" height="30"/>
+                                <state key="normal" title="Hide Red logo">
+                                    <color key="titleColor" red="1" green="0.079954973350900627" blue="0.15666174802679733" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HideRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rmh-PP-LwF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8f-gE-YUh">
+                                <rect key="frame" x="108" y="303" width="159" height="30"/>
+                                <state key="normal" title="Show Both Logos"/>
+                                <connections>
+                                    <action selector="showboth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I6R-iz-geL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2F-t1-Pqd">
+                                <rect key="frame" x="108" y="265" width="159" height="30"/>
+                                <state key="normal" title="Hide Both Logos">
+                                    <color key="titleColor" red="1" green="0.07995497335" blue="0.15666174799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HideBoth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z9a-b9-9eW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="BlueLogo" destination="9hb-XO-NfB" id="zZP-5L-CHI"/>
+                        <outlet property="HideBlue" destination="pMB-Rp-dpa" id="9da-3j-GKx"/>
+                        <outlet property="HideRed" destination="3bZ-Qg-PW9" id="inS-9C-jrW"/>
+                        <outlet property="RedLogo" destination="ULl-PS-vd7" id="h6O-Mb-c6G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="301.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="images" width="323" height="156"/>
+        <image name="images-2" width="323" height="156"/>
+    </resources>
+</document>
